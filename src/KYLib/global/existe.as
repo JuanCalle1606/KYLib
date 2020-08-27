@@ -27,6 +27,16 @@ package KYLib.global
 	 * @param propiedad El nombre de una propiedad que se quiera ver que existe en el objeto pasado, si de por si el objeto pasado no existe se devuelve <code>false</code>.
 	 *
 	 * @return Devuelve <code>true</code> si el objeto existe y <code>false</code> si no existe, si es nulo, es <code>false</code>, es 0 o es indefinido.
+	 *
+	 * @langversion 3.0
+	 *
+	 * @playerversion Flash 12
+	 *  @playerversion AIR 32
+	 *
+	 * @productversion Flash CS6
+	 * @productversion Animate CC
+	 * 
+	 * @author Juan Pablo Calle
 	 */
 	public function existe(objeto:*, propiedad:String = null):Boolean
 	{

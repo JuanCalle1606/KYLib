@@ -19,42 +19,27 @@
  */
 package KYLib.global
 {
-		/**
-		 * Verifica si un conjunto de objetos existen.
-		 *
-		 * @param objetos Un conjunto de objetos que se quieren ver si existen.
-		 *
-		 * @return Devuelve <code>true</code> si los objetos existen y <code>false</code> si al menos uno de ellos no existe, es nulo o indefinido.
-		 * 
-		 * @author Juan Pablo Calle
-		 * @langversion 3.0
-		 *
-		 * @playerversion Flash 12
-		 *  @playerversion AIR 32
-		 *
-		 * @productversion Flash CS6
-		 * @productversion Animate CC
-		 * 
-		 * @author Juan Pablo Calle
-		 */
-		public function existen(...objetos): Boolean
-		{
-			//se mira que si hayan parametros
-			if (objetos.length <= 0)
-			{
-				//se retorna false ya que el conjunto es vacio
-				return false;
-			}
-			//se crea un bucle que pasa por cada uno de los parametros
-			for each(var objeto: * in objetos)
-			{
-				//si el objeto actual no existe entonces se retorna false
-				if (!existe(objeto))
-				{
-					return false;
-				}
-			}
-			//si todos existen se retorna true
-			return true;
-		}
+	/**
+	 * Indica si un objeto tiene una propiedad con el nombre especificado.
+	 * 
+	 * <p>Esta función utiliza otra funcion bastante primitiva por lo que se pueden usar otras clases mas personalizadas para realizar esto.</p>
+	 * 
+	 * @param	objeto El objeto a verificar.
+	 * @param	propiedad El nombre de la propiedad que se quiere saber si la tiene el objeto.
+	 * @return	<code>true</code> en caso de que el objeto posea una propiedad con ese nombre o <code>false</code> en caso contrario.
+	 *
+	 * @langversion 3.0
+	 *
+	 * @playerversion Flash 12
+	 *  @playerversion AIR 32
+	 *
+	 * @productversion Flash CS6
+	 * @productversion Animate CC
+	 * 
+	 * @author Juan Pablo Calle
+	 */
+	public function contiene(objeto:*, propiedad:String):Boolean
+	{
+		return objeto.hasOwnProperty(propiedad);
+	}
 }

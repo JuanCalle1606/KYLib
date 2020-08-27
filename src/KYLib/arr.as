@@ -52,9 +52,9 @@ package KYLib
 			
 			if (clase != null) 
 			{
-				for each (var item in arreglo) 
+				for each (var item:* in arreglo) 
 				{
-					if (item is clase) 
+					if (item is clase)
 					{
 						$dev++;
 					}

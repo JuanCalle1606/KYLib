@@ -10,17 +10,18 @@
 		
 		public function KYLibMain() 
 		{
+			
 		}
-
+		
 		public static function info():void
 		{
 			trace("[KYLib] Libreria por Juan Pablo Calle");
-			trace("[KYLib] version BETA 0.200.826 Build 435");
+			trace("[KYLib] version " + VERSION + " Build " + BUILD);
 		}
-
-		public static const BUILD:int = 435;
+		
+		public static const BUILD:int = 719;
 		
 		public static const VERSION:String = "BETA 0.200.826";
-
+		
 	}
 }

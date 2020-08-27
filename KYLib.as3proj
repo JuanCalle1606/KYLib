@@ -8,10 +8,11 @@
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
-    <movie version="32" />
+    <movie version="0" />
     <movie minorVersion="0" />
     <movie platform="AIR" />
     <movie background="#FFFFFF" />
+    <movie preferredSDK="AIR 32.0.0;32.0.0;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
@@ -79,9 +80,9 @@
     <hidden path="obj" />
   </hiddenPaths>
   <!-- Executed before build -->
-  <preBuildCommand>build.bat "$(CompilerPath)"</preBuildCommand>
+  <preBuildCommand>build.bat "$(CompilerPath)" build</preBuildCommand>
   <!-- Executed after build -->
-  <postBuildCommand alwaysRun="False" />
+  <postBuildCommand alwaysRun="True">build.bat "$(CompilerPath)" buildDoc</postBuildCommand>
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />

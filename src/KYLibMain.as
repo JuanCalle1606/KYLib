@@ -19,9 +19,9 @@
 			trace("[KYLib] version " + VERSION + " Build " + BUILD);
 		}
 		
-		public static const BUILD:int = 1351;
+		public static const BUILD:int = 2305;
 		
-		public static const VERSION:String = "BETA 0.200.827";
+		public static const VERSION:String = "BETA 0.200.828";
 		
 	}
 }

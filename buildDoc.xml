@@ -3,6 +3,7 @@
 	<property environment="env" />
 	<fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." />
 	<property name="FLEX_HOME" location="C:\Users\usuario\Desktop\Programacion\SDK\Flex-4.6" />
+	<property name="AIR_HOME" location="${env.FLEX_HOME}" />
 	
 	<property name="OUTPUT" location="lib/KYLib.swc"/>
 
@@ -12,7 +13,7 @@
 
 		<!-- generar documentación -->
 		<asdoc output="lib/tempDoc" lenient="true" failonerror="true" keep-xml="true" skip-xsl="true" fork="true">
-			<load-config filename="${FLEX_HOME}/frameworks/air-config.xml" />
+			<load-config filename="${AIR_HOME}/frameworks/air-config.xml" />
 			<sp path-element="src"/>
 			<doc-sources path-element="src" />
 		</asdoc>

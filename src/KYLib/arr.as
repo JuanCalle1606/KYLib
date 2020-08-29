@@ -62,7 +62,7 @@ package KYLib
 				
 				return $dev;
 			}
-			
+			// si no se da ninguna clase para contar simplmenete se devuelve la longitud del arreglo
 			return arreglo.length;
 		}
 	}

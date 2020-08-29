@@ -180,8 +180,8 @@ package KYLib.utils
 		 * </ul>
 		 *
 		 * @param objetoAVaciar El objeto que se quiere vaciar
-		 * @param ParametrosDeExclusion Un array que contiene información sobre que objetos seran eliminados del objetoa vaciar,ejemplo de parametro de eliminación puede ser:
-		 *<listing>[{
+		 * @param ParametrosDeExclusion Un array que contiene información sobre que objetos seran eliminados del objeto a vaciar,ejemplo de parametro de eliminación puede ser:
+		 * <listing>[{
 		 	"tipo": "clase",
 		 	"valor": Sprite
 		 },

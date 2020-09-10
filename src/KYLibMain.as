@@ -6,22 +6,16 @@
 	 * @author Juan Pablo Calle
 	 */
 	public class KYLibMain
-	{
-		
-		public function KYLibMain() 
-		{
-			
-		}
-		
+	{		
 		public static function info():void
 		{
 			trace("[KYLib] Libreria por Juan Pablo Calle");
 			trace("[KYLib] version " + VERSION + " Build " + BUILD);
 		}
 		
-		public static const BUILD:int = 2305;
+		public static const BUILD:int = 2059;
 		
-		public static const VERSION:String = "BETA 0.200.828";
+		public static const VERSION:String = "BETA 0.200.909";
 		
 	}
 }

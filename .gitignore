@@ -1,6 +1,8 @@
 # Carpetas de lanzamiento
 [Ll]ib/
 
+# Sublimetext files
+*.sublime-*
 
 # Ejecutables
 *.swf

@@ -124,7 +124,7 @@ package KYLib.bytelevel
 		 * 
 		 * @throws	EOFError No hay suficientes datos disponibles para leer.
 		 */
-		private function readMedium():int 
+		public function readMedium():int 
 		{
 			if (bytesAvailable < 3) 
 			{
@@ -157,7 +157,7 @@ package KYLib.bytelevel
 		 * 
 		 * @throws	EOFError No hay suficientes datos disponibles para leer.
 		 */
-		private function readUnsignedMedium():uint 
+		public function readUnsignedMedium():uint 
 		{
 			if (bytesAvailable < 3) 
 			{
@@ -166,13 +166,15 @@ package KYLib.bytelevel
 			// se leen los tres bytes
 			readBytes($bytes, 0, 3);
 			
-			/// La variable devuelta
-			//var Dev:Number = Number(hex.deBytes($bytes));// necesita ser implementada luego con la clase hex
-			
+			/// variable devuelta
+			var dev:uint = parseInt(hex.hexChar($bytes[0]) +
+							hex.hexChar($bytes[1]) +
+							hex.hexChar($bytes[2]), 16);
+							
 			//se libera la memoria
 			$bytes.clear();
 			
-			return 0/*Dev*/;
+			return dev;
 		}
 		
 		/**

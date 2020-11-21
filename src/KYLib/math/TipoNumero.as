@@ -121,7 +121,7 @@ package KYLib.math
 		 * @param	numero El numero del cual se quiere saber el tipo.
 		 * @return El tipo de numero.
 		 */
-		internal static function detectarTipoNumero(value:Number):String 
+		public static function detectarTipoNumero(value:Number):String 
 		{
 			var cadena:String = String(value);
 			//se mira si es un numero de coma flotante o si esta reducido, para esto se mira si la representación textual del numero tiene el caracter ".", tambien se mira si el numero esta por debajo del valor minimo que puede tener un int.
